@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Umara Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pinkerston&family=Arian+Light&family=Relateway&family=Forum&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="../../Imagenes-Videos/Imagen 8-4-25 a las 11.03.jpg" alt="Umara Logo" />
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="../Inicio/indexingles.html" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="../Menu/indexingles.html" class="header__nav-link">Menu</a></li>
+
+                <!-- Submenu About Us adapted to BEM -->
+                <li class="header__nav-item header__nav-item--has-submenu">
+                    <a href="../Nosotros/indexingles.html" class="header__nav-link">About Us</a>
+                    <ul class="header__submenu">
+                        <li class="header__submenu-item">
+                            <a href="./Sostenibilidad/indexingles.html" class="header__submenu-link">Sustainability</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header__nav-item"><a href="../Eventos/indexingles.html" class="header__nav-link">Events</a></li>
+                <li class="header__nav-item"><a href="../Contacto/indexingles.html" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="../Clientes/indexingles.html" class="header__nav-link">Clients</a></li>
+                <li class="header__nav-item"><a href="../Mas/indexingles.html" class="header__nav-link">More</a></li>
+                <li class="header__nav-item">
+                    <a href="./index.html" class="language-toggle">ES</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+  <div class="about-section__container">
+    <h2 class="about-section__title">About us</h2>
+  </div>
+</section>
+
+    <section class="equipo">
+        <h2 class="equipo__titulo">Who Are We?</h2>
+
+        <div class="equipo__miembro">
+            <div class="equipo__imagen">
+                <img src="../Nosotros/Imagenes/Blanco-Negro.png" alt="Adrián Viriz Arteaga" />
+            </div>
+            <div class="equipo__texto">
+                <h3 class="equipo__nombre">Adrián Viriz Arteaga</h3>
+                <p class="equipo__descripcion">
+                    Umara's Community Manager, 20 years old, conveys the brand’s essence on Instagram, TikTok, and Facebook, creating an authentic connection with our audience. He develops content aligned with our identity, engages with the community, and analyzes trends to keep Umara relevant.
+                </p>
+            </div>
+        </div>
+
+        <div class="equipo__miembro equipo__miembro--invertido">
+            <div class="equipo__imagen">
+                <img src="../Nosotros/Imagenes/Espalda.png" alt="Ismael Ropero Gómez" />
+            </div>
+            <div class="equipo__texto">
+                <h3 class="equipo__nombre">Ismael Ropero Gómez</h3>
+                <p class="equipo__descripcion">
+                    Umara's Event Planner, 25 years old, designs and promotes unforgettable experiences. He coordinates weddings, special events, and brand launches, ensuring flawless execution and a memorable experience for every client.
+                </p>
+            </div>
+        </div>
+
+        <div class="equipo__miembro">
+            <div class="equipo__imagen">
+                <img src="../Nosotros/Imagenes/Chica.png" alt="Aitana Sánchez Pérez" />
+            </div>
+            <div class="equipo__texto">
+                <h3 class="equipo__nombre">Aitana Sánchez Pérez</h3>
+                <p class="equipo__descripcion">
+                    Umara's Operations Manager, 19 years old, leads the efficiency of restaurant processes. She oversees logistics, the team, and service, guaranteeing a flawless experience and high standards in every corner of the venue.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+  <div class="info-section__container">
+    
+    <div class="info-section__block info-section__block--left">
+      <h2 class="info-section__title">Vision</h2>
+      <p class="info-section__text">
+        To be a benchmark in Nikkei cuisine, merging tradition and innovation to turn every meal into a memorable experience.
+      </p>
+    </div>
+
+    <div class="info-section__block info-section__block--center">
+      <h2 class="info-section__title">Mission</h2>
+      <p class="info-section__text">
+        To offer a unique gastronomic experience that blends the best of Japanese and Peruvian cuisine, emphasizing quality, creativity, and service.
+      </p>
+    </div>
+
+    <div class="info-section__block info-section__block--right">
+      <h2 class="info-section__title">Values</h2>
+      <ul class="info-section__list">
+        <li class="info-section__item">Creativity</li>
+        <li class="info-section__item">Sustainability</li>
+        <li class="info-section__item">Ethics</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="footer__contenido">
+            <!-- Left -->
+            <div class="footer__col footer__col--left">
+                <h3 class="footer__titulo">Umara Restaurant</h3>
+                <p class="footer__texto">Flavors that inspire.</p>
+            </div>
+
+            <!-- Center -->
+            <div class="footer__col footer__col--center">
+                <h4 class="footer__subtitulo">Hours</h4>
+                <p class="footer__texto">Mon - Sat: 1:00 PM - 4:00 PM / 8:30 PM - 11:00 PM</p>
+            </div>
+
+            <!-- Right -->
+            <div class="footer__col footer__col--right">
+                <h4 class="footer__subtitulo">Contact</h4>
+                <p class="footer__texto">📍 123 Main Street</p>
+                <p class="footer__texto">📞 +34 600 123 456</p>
+                <p class="footer__texto">✉ info@umara.com</p>
+                <p class="footer__iconos">
+                    <a href="#" class="footer__icono">🐦</a>
+                    <a href="#" class="footer__icono">📸</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer__base">
+            <p>© 2025 Umara Restaurant. All rights reserved.</p>
+            <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

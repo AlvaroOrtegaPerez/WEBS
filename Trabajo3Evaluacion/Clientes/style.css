@@ -1,0 +1,213 @@
+body {
+    font-family: 'Relateway', sans-serif;
+    line-height: 1.6;
+    background-color: #0d0d0d;
+    color: #f0e7d8;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.5rem 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #a60000;
+}
+
+.header__logo img {
+    max-width: 100px;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header__nav-item {
+    display: inline-block;
+}
+
+.header__nav-link {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header__nav-link:hover {
+    color: #a60000;
+}
+
+.language-toggle {
+    background-color: transparent;
+    color: #0d0d0d;
+    border: 1px solid #a60000;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.language-toggle:hover {
+    background-color: #a60000;
+    color: #ffffff;
+}
+
+.clientes {
+  background-color: #fdf8ef;
+  font-family: 'Forum', serif;
+  color: #333;
+}
+
+.clientes__hero {
+  background-image: url('../Clientes/Imagenes/restaurant-table-set-up-for-dinner-2022-11-15-21-05-15-utc-scaled.jpg'); /* Ajusta la ruta */
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientes__titulo {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.clientes__contenido {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.clientes__descripcion {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.clientes__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.clientes__input {
+  padding: 12px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+.clientes__fecha {
+  display: flex;
+  gap: 10px;
+}
+
+.clientes__input--fecha {
+  flex: 1;
+}
+
+.clientes__boton {
+  padding: 14px;
+  background-color: #7b5b3e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clientes__boton:hover {
+  background-color: #604630;
+}
+
+
+.footer {
+  background-color: #111;
+  color: #CCCCCC;
+  padding: 3rem 2rem 2rem;
+  font-family: 'Forum', sans-serif;
+}
+
+.footer__contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footer__col {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.footer__col--left {
+  text-align: left;
+}
+
+.footer__col--center {
+  text-align: center;
+}
+
+.footer__col--right {
+  text-align: right;
+}
+
+.footer__titulo {
+  font-size: 1.8rem;
+  color: #8B5E3C;
+  margin-bottom: 0.5rem;
+}
+
+.footer__subtitulo {
+  font-size: 1.2rem;
+  color: #8B5E3C;
+  margin-bottom: 0.5rem;
+}
+
+.footer__texto {
+  color: #CCCCCC;
+  margin: 0.3rem 0;
+}
+
+.footer__iconos {
+  margin-top: 0.5rem;
+}
+
+.footer__icono {
+  color: #CCCCCC;
+  margin-right: 0.8rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer__icono:hover {
+  color: #8B5E3C;
+}
+
+.footer__base {
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #CCCCCC;
+  padding-top: 1rem;
+}
+
+.footer__base a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__base a:hover {
+  color: #8B5E3C;
+}

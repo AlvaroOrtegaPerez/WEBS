@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umara Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pinkerston&family=Arian+Light&family=Relateway&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+        <div class="header__logo">
+            <img src="../../Imagenes-Videos/Imagen 8-4-25 a las 11.03.jpg" alt="Logo Umara">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="../Inicio/index.html" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="../Menu/index.html" class="header__nav-link">Menú</a></li>
+
+                <!-- Submenú Nosotros adaptado a BEM -->
+                <li class="header__nav-item header__nav-item--has-submenu">
+                    <a href="../Nosotros/index.html" class="header__nav-link">Nosotros</a>
+                    <ul class="header__submenu">
+                        <li class="header__submenu-item">
+                            <a href="../Nosotros/Sostenibilidad/index.html" class="header__submenu-link">Sostenibilidad</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header__nav-item"><a href="../Eventos/index.html" class="header__nav-link">Eventos</a></li>
+                <li class="header__nav-item"><a href="../Contacto/index.html" class="header__nav-link">Contacto</a></li>
+                <li class="header__nav-item"><a href="../Clientes/index.html" class="header__nav-link">Clientes</a></li>
+                <li class="header__nav-item"><a href="../Mas/index.html" class="header__nav-link">Más</a></li>
+                <li class="header__nav-item">
+  <a href="./indexingles.html" class="language-toggle">EN</a>
+</li>
+
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Hero -->
+  <main class="menu">
+    <section class="menu__hero" style="background-image: url('../Menu/Imagenes/istockphoto-1176929581-612x612.jpg');">
+      <div class="menu__hero-content">
+        <h1 class="menu__title">Nuestro Menú</h1>
+      </div>
+    </section>
+  </main>
+
+  <!-- Glovo Section -->
+  <section class="glovo">
+    <div class="glovo__content">
+      <p class="glovo__text">Lleva el sabor de tu restaurante favorito a casa. Pide por Glovo y disfruta cada bocado.</p>
+      <a href="https://glovoapp.com/" target="_blank" class="glovo__button">¡Pida ahora!</a>
+    </div>
+  </section>
+
+  <!-- Carta Section -->
+  <section class="carta">
+    <div class="carta__content">
+      <img src="../Menu/Imagenes/Imagen 9-4-25 a las 9.26.jpg" alt="Carta del restaurante" class="carta__image">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer__contenido">
+    <!-- Izquierda -->
+    <div class="footer__col footer__col--left">
+      <h3 class="footer__titulo">Umara Restaurante</h3>
+      <p class="footer__texto">Sabores que inspiran.</p>
+    </div>
+
+    <!-- Centro -->
+    <div class="footer__col footer__col--center">
+      <h4 class="footer__subtitulo">Horarios</h4>
+      <p class="footer__texto">Lun - Sáb: 13:00 - 16:00 / 20:30 - 23:00</p>
+    </div>
+
+    <!-- Derecha -->
+    <div class="footer__col footer__col--right">
+      <h4 class="footer__subtitulo">Contacto</h4>
+      <p class="footer__texto">📍 Calle Principal 123</p>
+      <p class="footer__texto">📞 +34 600 123 456</p>
+      <p class="footer__texto">✉ info@umara.com</p>
+      <p class="footer__iconos">
+        <a href="#" class="footer__icono">🐦</a>
+        <a href="#" class="footer__icono">📸</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer__base">
+    <p>© 2025 Umara Restaurante. Todos los derechos reservados.</p>
+    <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
+  </div>
+</footer>
+
+
+</body>
+</html>

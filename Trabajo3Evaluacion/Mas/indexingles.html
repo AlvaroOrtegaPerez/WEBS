@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umara Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pinkerston&family=Arian+Light&family=Relateway&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="../../Imagenes-Videos/Imagen 8-4-25 a las 11.03.jpg" alt="Umara Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="../Inicio/indexingles.html" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="../Menu/indexingles.html" class="header__nav-link">Menu</a></li>
+
+                <!-- About submenu adapted to BEM -->
+                <li class="header__nav-item header__nav-item--has-submenu">
+                    <a href="indexingles.html#nosotros" class="header__nav-link">About Us</a>
+                    <ul class="header__submenu">
+                        <li class="header__submenu-item">
+                            <a href="../Nosotros/Sostenibilidad/indexingles.html" class="header__submenu-link">Sustainability</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header__nav-item"><a href="../Eventos/indexingles.html" class="header__nav-link">Events</a></li>
+                <li class="header__nav-item"><a href="../Contacto/indexingles.html" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="../Clientes/indexingles.html" class="header__nav-link">Clients</a></li>
+                <li class="header__nav-item"><a href="../Mas/indexingles.html" class="header__nav-link">More</a></li>
+                <li class="header__nav-item">
+                    <a href="./index.html" class="language-toggle">ESP</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Join Us Section -->
+    <section class="equipo">
+        <div class="equipo__intro">
+            <h2 class="equipo__titulo">Join Us</h2>
+            <p class="equipo__descripcion">
+                At Umara, we believe every detail matters and that people are the soul of our experience. We’re looking for passionate talents who want to be part of a team committed to excellence, creativity, and warm service.
+            </p>
+            <p class="equipo__descripcion">
+                If you share our vision and want to grow in an environment where gastronomy, design, and hospitality come together, we invite you to join us. Discover the opportunities we have for you and be part of this unique experience!
+            </p>
+        </div>
+
+        <div class="equipo__ofertas">
+            <div class="equipo__oferta">
+                <img src="../Mas/Imagenes/Comunity-Manager.jpg" alt="Community manager" class="equipo__imagen">
+                <h3 class="equipo__puesto">Community Manager</h3>
+                <button class="equipo__boton">View Offer</button>
+            </div>
+            <div class="equipo__oferta">
+                <img src="../Mas/Imagenes/Event-Planer.jpg" alt="Event planner" class="equipo__imagen">
+                <h3 class="equipo__puesto">Event Planner</h3>
+                <button class="equipo__boton">View Offer</button>
+            </div>
+            <div class="equipo__oferta">
+                <img src="../Mas/Imagenes/Marketing.png" alt="Marketing Operations Director" class="equipo__imagen">
+                <h3 class="equipo__puesto">Marketing Operations Director</h3>
+                <button class="equipo__boton">View Offer</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent Form Section -->
+    <section class="talento">
+        <div class="talento__contenido">
+            <h2 class="talento__titulo">Think your profile could interest us?</h2>
+            <p class="talento__texto">
+                Even if your profile doesn’t match our current openings, at Umara we value talent and passion.
+                If you believe you can contribute to our team, we’d love to hear from you.
+            </p>
+
+            <form class="talento__formulario">
+                <div class="talento__inputs">
+                    <input type="text" class="talento__input" placeholder="First Name" required>
+                    <input type="text" class="talento__input" placeholder="Last Name" required>
+                    <input type="email" class="talento__input" placeholder="Email *" required>
+                </div>
+                <button type="submit" class="talento__boton">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__contenido">
+            <!-- Left -->
+            <div class="footer__col footer__col--left">
+                <h3 class="footer__titulo">Umara Restaurant</h3>
+                <p class="footer__texto">Flavors that inspire.</p>
+            </div>
+
+            <!-- Center -->
+            <div class="footer__col footer__col--center">
+                <h4 class="footer__subtitulo">Opening Hours</h4>
+                <p class="footer__texto">Mon - Sat: 1:00 PM - 4:00 PM / 8:30 PM - 11:00 PM</p>
+            </div>
+
+            <!-- Right -->
+            <div class="footer__col footer__col--right">
+                <h4 class="footer__subtitulo">Contact</h4>
+                <p class="footer__texto">📍 123 Main Street</p>
+                <p class="footer__texto">📞 +34 600 123 456</p>
+                <p class="footer__texto">✉ info@umara.com</p>
+                <p class="footer__iconos">
+                    <a href="#" class="footer__icono">🐦</a>
+                    <a href="#" class="footer__icono">📸</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer__base">
+            <p>© 2025 Umara Restaurant. All rights reserved.</p>
+            <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

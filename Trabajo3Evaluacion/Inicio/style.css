@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Relateway', sans-serif;
+    line-height: 1.6;
+    background-color: #0d0d0d;
+    color: #f0e7d8;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.5rem 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #a60000;
+}
+
+.header__logo img {
+    max-width: 100px;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header__nav-item {
+    display: inline-block;
+}
+
+.header__nav-link {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header__nav-link:hover {
+    color: #a60000;
+}
+
+.header__nav-item--has-submenu {
+    position: relative;
+}
+
+.header__submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #a60000;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+
+.header__submenu-item {
+    display: block;
+}
+
+.header__submenu-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d0d0d;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+.header__submenu-link:hover {
+    background-color: #f0e7d8;
+    color: #a60000;
+}
+
+.header__nav-item--has-submenu:hover .header__submenu {
+    display: block;
+}
+.language-toggle {
+    background-color: transparent;
+    color: #0d0d0d;
+    border: 1px solid #a60000;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.language-toggle:hover {
+    background-color: #a60000;
+    color: #ffffff;
+}
+
+
+/* Hero */
+.hero {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero__title {
+    font-size: 11rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px #070301;
+    font-family: 'Pinkerston', sans-serif;
+}
+
+.hero__subtitle {
+    font-family: 'Arian Light', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.hero__button {
+    padding: 1rem 2rem;
+    background-color: #8B5E3C;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 1;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.hero__button:hover {
+    background-color: #a60000;
+    opacity: 0.8;
+}
+
+/* Sabores */
+.sabores {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      text-align: justify;
+    }
+
+    .sabores__contenido {
+      width: 50%;
+      padding: 3rem;
+      background-color: #f4f4f4; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #333;
+    }
+
+    .sabores__titulo {
+      font-size: 2.5rem;
+      color: #8B5E3C; 
+      font-family: 'Forum', sans-serif;
+      text-align: justify;
+    }
+
+    .sabores__descripcion {
+      font-size: 1.2rem;
+      margin: 1rem 0 1.5rem;
+      text-align: justify;
+    }
+
+    .sabores__enlace {
+      font-size: 1.2rem;
+      color: #8B5E3C;
+      text-decoration: none;
+    }
+
+    .sabores__enlace:hover {
+      color: #4E2A1F;
+    }
+
+    .sabores__imagen {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .sabores__imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      box-shadow: none;
+      display: block;}
+
+.populares {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #FAF7F1; 
+}
+
+.populares__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #8B5E3C; 
+  font-family: 'Forum', sans-serif;
+}
+
+.populares__productos {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.producto {
+  width: 300px;
+  text-align: left;
+  
+}
+
+.producto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+
+.producto__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #8B5E3C;
+  font-weight: bold;
+  font-family: 'Forum', sans-serif;
+}
+
+.producto__descripcion {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #333333;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #CCCCCC;
+  padding: 3rem 2rem 2rem;
+  font-family: 'Forum', sans-serif;
+}
+
+.footer__contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footer__col {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.footer__col--left {
+  text-align: left;
+}
+
+.footer__col--center {
+  text-align: center;
+}
+
+.footer__col--right {
+  text-align: right;
+}
+
+.footer__titulo {
+  font-size: 1.8rem;
+  color: #8B5E3C;
+  margin-bottom: 0.5rem;
+}
+
+.footer__subtitulo {
+  font-size: 1.2rem;
+  color: #8B5E3C;
+  margin-bottom: 0.5rem;
+}
+
+.footer__texto {
+  color: #CCCCCC;
+  margin: 0.3rem 0;
+}
+
+.footer__iconos {
+  margin-top: 0.5rem;
+}
+
+.footer__icono {
+  color: #CCCCCC;
+  margin-right: 0.8rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer__icono:hover {
+  color: #8B5E3C;
+}
+
+.footer__base {
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #CCCCCC;
+  padding-top: 1rem;
+}
+
+.footer__base a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__base a:hover {
+  color: #8B5E3C;
+}

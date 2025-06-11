@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umara Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pinkerston&family=Arian+Light&family=Relateway&family=Forum&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="../../Imagenes-Videos/Imagen 8-4-25 a las 11.03.jpg" alt="Umara Logo" />
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="../Inicio/indexingles.html" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="../Menu/indexingles.html" class="header__nav-link">Menu</a></li>
+
+                <!-- Submenu About Us adapted to BEM -->
+                <li class="header__nav-item header__nav-item--has-submenu">
+                    <a href="../Nosotros/indexingles.html" class="header__nav-link">About Us</a>
+                    <ul class="header__submenu">
+                        <li class="header__submenu-item">
+                            <a href="../Nosotros/Sostenibilidad/indexingles.html" class="header__submenu-link">Sustainability</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header__nav-item"><a href="../Eventos/indexingles.html" class="header__nav-link">Events</a></li>
+                <li class="header__nav-item"><a href="../Contacto/indexingles.html" class="header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="../Clientes/indexingles.html" class="header__nav-link">Clients</a></li>
+                <li class="header__nav-item"><a href="../Mas/indexingles.html" class="header__nav-link">More</a></li>
+                <li class="header__nav-item">
+  <a href="./index.html" class="language-toggle">ESP</a>
+</li>
+
+</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <video autoplay muted loop class="hero__video" id="background-video">
+            <source src="../Imagenes-Videos/149935-797511795_medium.mp4" type="video/mp4" />
+            Your browser does not support the video format.
+        </video>
+
+        <h1 class="hero__title">Umara</h1>
+        <a href="./Reserva/indexingles.html" class="hero__button boton-reservar">Book a Table</a>
+    </section>
+
+    <!-- Flavors -->
+    <section class="sabores">
+        <div class="sabores__contenido">
+            <h2 class="sabores__titulo">Flavors that linger in your memory</h2>
+            <p class="sabores__descripcion">
+                Our food takes you on a journey, full of flavor and moments to remember.
+            </p>
+            <p class="sabores__descripcion">Here you don’t just eat, you live it!</p>
+            <br /><br />
+            <a href="../Menu/indexingles.html" class="sabores__enlace">See the menu</a>
+        </div>
+        <div class="sabores__imagen">
+            <img src="..//Imagenes-Videos/pedazo-de-ensalada-en-primer-plano-tenedor.jpg" alt="Flavors image" />
+        </div>
+    </section>
+
+    <section class="populares">
+        <h2 class="populares__titulo">Most Popular</h2>
+        <div class="populares__productos">
+            <div class="producto">
+                <img src="../Imagenes-Videos/buffet-nikkei.webp" alt="Nikkei Ceviche" />
+                <div class="producto__header">
+                    <span>Nikkei Ceviche</span>
+                    <span>€18.00</span>
+                </div>
+                <p class="producto__descripcion">
+                    Tamarind and rocoto leche de tigre, macadamia toasted salmon, corn, and jalapeño.
+                </p>
+            </div>
+            <div class="producto">
+                <img src="../Imagenes-Videos/vista-lateral-de-berenjenas-fritas-enrolladas-con-rodajas-de-limon.jpg" alt="Urame Roll" />
+                <div class="producto__header">
+                    <span>Urame Roll</span>
+                    <span>€16.50</span>
+                </div>
+                <p class="producto__descripcion">
+                    A house specialty with tempura shrimp and cucumber, wrapped in sushi rice and nori seaweed, topped with avocado slices, unagi sauce, and black sesame.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__col footer__col--left">
+                <h3 class="footer__titulo">Umara Restaurant</h3>
+                <p class="footer__texto">Flavors that inspire.</p>
+            </div>
+
+            <div class="footer__col footer__col--center">
+                <h4 class="footer__subtitulo">Hours</h4>
+                <p class="footer__texto">Mon - Sat: 1:00 PM - 4:00 PM / 8:30 PM - 11:00 PM</p>
+            </div>
+
+            <div class="footer__col footer__col--right">
+                <h4 class="footer__subtitulo">Contact</h4>
+                <p class="footer__texto">📍 Main Street 123</p>
+                <p class="footer__texto">📞 +34 600 123 456</p>
+                <p class="footer__texto">✉ info@umara.com</p>
+                <p class="footer__iconos">
+                    <a href="#" class="footer__icono">🐦</a>
+                    <a href="#" class="footer__icono">📸</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer__base">
+            <p>© 2025 Umara Restaurant. All rights reserved.</p>
+            <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
